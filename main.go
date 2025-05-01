@@ -1,3 +1,4 @@
+
 package main
 
 import (
@@ -11,6 +12,7 @@ func main() {
 	fmt.Println("===========================")
 
 	system.PrintHostname()
+	system.PrintHostInfo()
 	system.PrintCPU()
 	system.PrintMemory()
 	system.PrintDiskUsage()
