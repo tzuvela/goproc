@@ -13,4 +13,5 @@ func main() {
 	system.PrintHostname()
 	system.PrintCPU()
 	system.PrintMemory()
+	system.PrintDiskUsage()
 }
