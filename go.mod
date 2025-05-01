@@ -1,3 +1,3 @@
-module github.com/yourusername/goproc
+module github.com/tzuvela/goproc
 
 go 1.20
