@@ -16,9 +16,9 @@ Run the CLI from the project root:
 
 ```bash
 go run main.go
-
+```
 Example output:
-
+```
 goproc - Simple System Info
 ===========================
 Hostname: YOUR-HOSTNAME
@@ -34,6 +34,7 @@ Disk Usage (/):
   Used:  486.99 GB
   Free:  12.57 GB
   Used Percent: 97.48%
+```
 
 Goals
 This project is designed to:
