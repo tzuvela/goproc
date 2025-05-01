@@ -1,17 +1,25 @@
 # goproc
 
-`goproc` is a simple CLI tool written in Go to list and monitor active system processes.
+`goproc` is a simple Go CLI tool for retrieving system information.
+
+This project is part of a personal learning and portfolio-building effort, showcasing Go development practices and practical CLI tooling.
 
 ## Features
-- View running processes with CPU and memory usage
-- Filter by resource usage
-- Export to JSON or CSV
-- Clean CLI interface
 
-## Why?
-I built `goproc` to brush up on Go and system internals, while applying Linux knowledge from my infrastructure background.
+- Get the current system hostname
+- Display number of CPU cores
+- Modular and expandable architecture
 
-## Future plans
-- Add logging
-- Raspberry Pi support
-- TUI interface
+## Getting Started
+
+### Prerequisites
+
+- Go 1.20+
+- Git
+
+### Run Locally
+
+```bash
+git clone https://github.com/tzuvela/goproc.git
+cd goproc
+go run main.go
