@@ -5,7 +5,7 @@ import (
 	"runtime"
 )
 
-func PrintMemory() {
+func PrintMemoryInfo() {
 	var m runtime.MemStats
 	runtime.ReadMemStats(&m)
 

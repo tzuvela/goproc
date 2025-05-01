@@ -12,6 +12,7 @@ func main() {
 	// Define flags
 	showCPU := flag.Bool("cpu", false, "Show CPU info")
 	showMem := flag.Bool("mem", false, "Show memory info")
+	showMemory := flag.Bool("memory", false, "Show memory info")
 	showDisk := flag.Bool("disk", false, "Show disk usage")
 	showHost := flag.Bool("host", false, "Show OS and uptime info")
 	showAll := flag.Bool("all", false, "Show all system info (default)")
@@ -43,6 +44,9 @@ func main() {
 		system.PrintCPUInfo()
 	}
 	if *showMem {
+		system.PrintMemoryInfo()
+	}
+	if *showMemory {
 		system.PrintMemoryInfo()
 	}
 	if *showDisk {

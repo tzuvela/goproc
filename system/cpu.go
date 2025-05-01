@@ -5,7 +5,7 @@ import (
 	"runtime"
 )
 
-func PrintCPU() {
+func PrintCPUInfo() {
 	fmt.Printf("CPU Cores: %d\n", runtime.NumCPU())
 	fmt.Println()
 }
