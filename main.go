@@ -18,4 +18,13 @@ func main() {
 	fmt.Println("===========================")
 	fmt.Printf("Hostname: %s\n", hostname)
 	fmt.Printf("CPU Cores: %d\n", runtime.NumCPU())
+	fmt.Println("Memory Info:")
+	printMemoryStats()
+}
+func printMemoryStats() {
+	var m runtime.MemStats
+	runtime.ReadMemStats(&m)
+	fmt.Printf("Memory Allocated: %.2f MB\n", float64(m.Alloc)/1024.0/1024.0)
+	fmt.Printf("Total Allocated: %.2f MB\n", float64(m.TotalAlloc)/1024.0/1024.0)
+	fmt.Printf("System Memory Obtained: %.2f MB\n", float64(m.Sys)/1024.0/1024.0)
 }
