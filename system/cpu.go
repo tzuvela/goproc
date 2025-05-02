@@ -11,10 +11,12 @@ func GetCPUInfo() ([]cpu.InfoStat, error) {
 
 }
 func PrintCPUInfo() {
-	infos, err := GetCPUInfo()
+	//Physical core count
+
+	cores, err := cpu.Counts(true)
 	if err != nil {
-		fmt.Println("Error getting CPU info:", err)
+		fmt.Println("Error getting CPU incoresfo:", err)
 		return
 	}
-	fmt.Printf("\nCPU Cores: %d\n", len(infos))
+	fmt.Printf("\nCPU Cores: %d\n", cores)
 }
