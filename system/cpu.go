@@ -15,7 +15,7 @@ func PrintCPUInfo() {
 
 	cores, err := cpu.Counts(true)
 	if err != nil {
-		fmt.Println("Error getting CPU incoresfo:", err)
+		fmt.Println("Error getting CPU core info:", err)
 		return
 	}
 	fmt.Printf("\nCPU Cores: %d\n", cores)
